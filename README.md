@@ -317,7 +317,7 @@ Distribution-ის სტატისტიკა:
 Distribution-ის ფორმა ლოგიკურია fraud detection-ისთვის:
 - ტრანზაქციების უმრავლესობას აქვს დაბალი predicted probability (~0-0.2) — ეს რეალურ fraud rate-ს ემთხვევა (~3.5%)
 - მცირე "კუდი" 1.0-ის მახლობლად — ეს არის ცხადად fraud-ად აღქმული ტრანზაქციები
-- მოდელი კარგად ცალცალკეულია — ცხადი fraud (probability ~1.0) და ცხადი non-fraud (probability ~0) ცალცალკე გამოიყოფიან
+- მოდელი დამაჯერებელია — ცხადი fraud (probability ~1.0) და ცხადი non-fraud (probability ~0) ცალცალკე გამოიყოფიან
 
 ეს pattern ცხადყოფს რომ XGBoost-მა რეალურად ისწავლა fraud-ის pattern, არა უბრალოდ middle-ground predictions.
 
