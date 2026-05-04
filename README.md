@@ -255,7 +255,7 @@ XGBoost-ისთვის უფრო ბევრი feature დავტო�
 - **depth=6 ბალანსია** — depth=10/15/20 strong overfitting-ს იწვევს
 - **lr=0.1 ოპტიმუმია** — lr=0.05 underfit, lr=0.3 overfit
 - **depth=15 + 1.0 Train AUC** = perfect overfit, მაგრამ Val AUC მაინც კარგი
-- **healthy gap (depth=5, lr=0.05)** ცემდა Val 0.868 — stable, მაგრამ ცოტა underfit
+- **healthy gap (depth=5, lr=0.05)**  Val 0.868 — stable, მაგრამ ცოტა underfit
 
 **საუკეთესო:** `n_est=300, depth=6, lr=0.1, reg_alpha=0.5, reg_lambda=2`, Validation AUC **0.9003**.
 
@@ -274,7 +274,7 @@ XGBoost-ისთვის უფრო ბევრი feature დავტო�
 2. ყველაზე მაღალი Public და Private Kaggle LB
 3. Native NaN handling — preprocessing უფრო მარტივია
 4. Public-Private gap მცირეა (0.04) — მოდელი არ არის overfit Public LB-ზე
-5. Inference-ში reproducibility დადასტურდა — Inference notebook-ი იგივე score-ს ცემს
+5. Inference-ში reproducibility დადასტურდა — Inference notebook-ი იგივე score-ს დებს.
 
 XGBoost Pipeline დარეგისტრირდა MLflow Model Registry-ში სახელით `XGB_Fraud_Detection`. `model_inference.ipynb` ატვირთავს ამ Pipeline-ს და test set-ზე იგივე score-ს იძლევა (Public 0.9176, Private 0.8793) — ეს ადასტურებს რომ Pipeline 100% reproducible-ია.
 
